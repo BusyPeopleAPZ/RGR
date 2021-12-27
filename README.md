@@ -124,16 +124,20 @@ func BenchmarkCount(b *testing.B) {
 
 Результати запуску бенчмарка:
 
+![image](https://user-images.githubusercontent.com/55399296/147479656-0b6ec0ad-474e-4c95-ab50-e3a7d3fd9f90.png)
 
 
 ---
 
 Графік, побудований на основі отриманих значень:
 
+![image](https://user-images.githubusercontent.com/55399296/147481001-4b6cb5cc-8ac9-414a-8b58-94666b5e6304.png)
 
+З графіку видно, що час виконання нашої функції лінійно збільшується, що й необхідно було підтвердити.
 
 ---
 
 Діаграма взаємодії:
 
+![image](https://user-images.githubusercontent.com/55399296/147479693-605df8c7-20af-43c6-8493-5843d0256663.png)
 
