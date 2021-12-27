@@ -124,8 +124,7 @@ func BenchmarkCount(b *testing.B) {
 
 Результати запуску бенчмарка:
 
-![image](https://user-images.githubusercontent.com/55399296/147479656-0b6ec0ad-474e-4c95-ab50-e3a7d3fd9f90.png)
-
+![image](https://user-images.githubusercontent.com/55399296/147481149-5acbd0d9-e948-417f-ad05-bba7c0612d02.png)
 
 ---
 
