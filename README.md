@@ -87,3 +87,53 @@ func BenchmarkCount(b *testing.B) {
 
 З графіку видно, що час виконання нашої функції лінійно збільшується. Також можемо побачити, що значення x іноді менше за значення х-1, це можна пояснити тим, що тестування відбувалось не в ідеальних умовах.
 
+---
+### Завдання-3
+
+Код bench_test.go файлу:
+
+```go
+package main
+
+import (
+	"fmt"
+	"testing"
+	"strings"
+
+	"github.com/BusyPeopleAPZ/architecture-lab-4/engine"
+)
+
+var command = "print"
+var cntRes engine.Command
+
+func BenchmarkCount(b *testing.B) {
+	baseLen := 200000
+	for i := 0; i < 13; i++ {
+		baseLen = 2 * baseLen
+		inputValue := command
+		inputValue += strings.Repeat("BBB", baseLen)
+
+		b.Run(fmt.Sprintf("len=%d", baseLen), func(b *testing.B) {
+			cntRes = parse(inputValue)
+		})
+	}
+}
+```
+
+---
+
+Результати запуску бенчмарка:
+
+
+
+---
+
+Графік, побудований на основі отриманих значень:
+
+
+
+---
+
+Діаграма взаємодії:
+
+
